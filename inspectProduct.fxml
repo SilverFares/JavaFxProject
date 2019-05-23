@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="updateA" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.inspectProductController">
+   <children>
+      <ImageView fitHeight="407.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/im1.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="product1" editable="false" layoutX="67.0" layoutY="165.0" />
+      <TextField fx:id="price1" editable="false" layoutX="260.0" layoutY="165.0" />
+      <TextField fx:id="qua1" editable="false" layoutX="67.0" layoutY="239.0" />
+      <Label layoutX="75.0" layoutY="139.0" prefHeight="18.0" prefWidth="100.0" style="-fx-font-weight: bold; -fx-font-style: italic;" text="Prduct name" textFill="#f0e6e6" />
+      <Label layoutX="265.0" layoutY="139.0" prefHeight="18.0" prefWidth="137.0" style="-fx-font-weight: bold; -fx-font-style: italic;" text="Price" textFill="#f0e6e6" />
+      <Label layoutX="75.0" layoutY="211.0" style="-fx-font-weight: bold; -fx-font-style: italic;" text="Quantity" textFill="#f0e6e6" />
+      <Button fx:id="cancelB" layoutX="183.0" layoutY="316.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="26.0" prefWidth="129.0" text="Retrun" />
+      <Label fx:id="addMessage" layoutX="265.0" layoutY="242.0" prefHeight="18.0" prefWidth="277.0" textFill="#dd0d0d" />
+      <Label layoutX="265.0" layoutY="210.0" prefHeight="18.0" prefWidth="137.0" style="-fx-font-weight: bold; -fx-font-style: italic;" text="Creation date" textFill="#f0e6e6" />
+      <TextField fx:id="creationDate" editable="false" layoutX="259.0" layoutY="238.0" />
+   </children>
+</AnchorPane>

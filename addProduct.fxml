@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#addProduct" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.addProductController">
+   <children>
+      <ImageView fitHeight="407.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/im1.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="product" layoutX="67.0" layoutY="165.0" promptText="name" />
+      <TextField fx:id="price" layoutX="260.0" layoutY="165.0" promptText="price" />
+      <TextField fx:id="qua" layoutX="67.0" layoutY="239.0" promptText="quantity" />
+      <Label layoutX="75.0" layoutY="139.0" prefHeight="18.0" prefWidth="100.0" style="-fx-font-style: italic; -fx-font-weight: bold;" text="Prduct name" textFill="#eae4e4" />
+      <Label layoutX="265.0" layoutY="139.0" prefHeight="18.0" prefWidth="137.0" style="-fx-font-style: italic; -fx-font-weight: bold;" text="Price" textFill="#f5eded" />
+      <Label layoutX="75.0" layoutY="211.0" style="-fx-font-weight: bold; -fx-font-style: italic;" text="Quantity" textFill="#ede3e3" />
+      <Button fx:id="cancelB" layoutX="260.0" layoutY="315.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="26.0" prefWidth="129.0" text="Cancel" />
+      <Button fx:id="addP" layoutX="86.0" layoutY="316.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="26.0" prefWidth="129.0" text="Add" />
+      <Label fx:id="addMessage" layoutX="265.0" layoutY="242.0" prefHeight="18.0" prefWidth="277.0" textFill="#dd0d0d" />
+   </children>
+</AnchorPane>

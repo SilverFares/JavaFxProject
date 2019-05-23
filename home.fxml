@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.homeController">
+   <children>
+      <ImageView fitHeight="625.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/im1.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="listProd" layoutY="66.0" prefHeight="535.0" prefWidth="480.0">
+        <columns>
+          <TableColumn fx:id="productName" prefWidth="104.79998779296875" text="Product name" />
+          <TableColumn fx:id="quantity" prefWidth="79.20001220703125" text="Quantity" />
+            <TableColumn fx:id="price" prefWidth="84.00006103515625" text="Price(DT)" />
+            <TableColumn fx:id="date" prefWidth="96.79998779296875" text="Creation date" />
+            <TableColumn fx:id="date2" prefWidth="115.20001220703125" text="Update date" />
+        </columns>
+      </TableView>
+      <TextField fx:id="search" layoutX="21.0" layoutY="32.0" promptText="Searsh" />
+      <Button fx:id="addProduct" layoutX="480.0" layoutY="86.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="63.0" prefWidth="120.0" text="Add product" />
+      <Button fx:id="searshButton" layoutX="170.0" layoutY="32.0" mnemonicParsing="false" onAction="#searshAction" prefHeight="26.0" prefWidth="46.0">
+         <graphic>
+            <ImageView fitHeight="14.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/searshIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="addMessage" layoutX="480.0" layoutY="401.0" prefHeight="186.0" prefWidth="120.0" textFill="#ea0a0a" />
+      <AnchorPane layoutX="480.0" layoutY="400.0" prefHeight="200.0" prefWidth="120.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>
